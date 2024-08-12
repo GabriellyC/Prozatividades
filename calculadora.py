@@ -1,6 +1,8 @@
 def calculadora():
 
     calculo = int(input("Escolha a opção desejada( 1-soma, 2 - subtração, 3 - multiplicação, 4- divisão, 0 - sair): "))
+    if calculo > 4:
+        return 'Digite uma opção válida!'
 
     if calculo == 0:
         return
@@ -21,7 +23,7 @@ def calculadora():
     elif calculo == 4:
         return n1 / n2
     else:
-        return 0
+        return
 
 while True:
     print(calculadora())
